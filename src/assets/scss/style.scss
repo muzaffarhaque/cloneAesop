@@ -1,0 +1,50 @@
+@import url(https://db.onlinewebfonts.com/c/eb270b13b84d5a43462737e3fb0a268d?family=Suisse+Intl+Regular);
+* {
+    font-family: "Suisse Intl Regular, sans-serif";
+}
+// ================= FONT SIZE FUNCTION -------------------
+//1440 screen
+@function fs($a) {
+     @return calc(($a * 1)/14.4) + vw;
+}
+@function dm($a) {
+     @return calc(($a * 1)/14.4) + vw;
+}
+@function lh($a) {
+     @return calc(($a * 1)/14.4) + vw;
+}
+
+// ================= FONT SIZE FUNCTION -------------------
+// 
+// ======================= FONT SIZE START =================================
+.fs-30-25 {
+    font-size: fs(30);
+    line-height: lh(42);
+}
+.fs-15-13 {
+    font-size: fs(15);
+    line-height: lh(22);
+}
+.fs-14-12,
+.fx-14 {
+    font-size: fs(14);
+    line-height: lh(19);
+}
+
+// ======================= FONT SIZE END =================================
+@media (max-width:920px) {
+    // ======================= FONT SIZE START =================================
+    .fs-30-25 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .fs-15-13 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .fs-14-12 {
+        font-size: 12px;
+        line-height: 17px;
+    }
+    // ======================= FONT SIZE END =================================
+}
