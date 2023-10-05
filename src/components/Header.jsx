@@ -18,10 +18,20 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        window.addEventListener('scroll', handleScroll);
+      } else {
+        setIsScrolled(false);
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
   return (<>    
