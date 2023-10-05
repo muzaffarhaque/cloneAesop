@@ -1,0 +1,434 @@
+// ======================== HOME HERO SECTION START =====================
+.hero-section-carousel {
+
+    .carousel {
+        .carousel-indicators {
+            display: none;
+        }
+        .carousel-control-prev {
+            display: none;
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-60%);
+        }
+        .carousel-control-next {
+            display: none;
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-40%);
+        }
+        .carousel-inner {
+            max-height: 624px;
+            height: 100vh;
+            .carousel-item {
+                height: 100%;
+                &:nth-child(3) {
+                    .carousel-caption {
+                        color: $black-333 !important;
+                        .hero-carousel-wrapper {
+                            h5,
+                            p {
+                                color: $black-333 !important;
+                            }
+                            .hero-content-box {
+                                padding-right: 10%;
+                            }
+                            // .hero-image-third{
+                            //     &::before{
+                            //         position: absolute;
+                            //         content: "";
+                            //         left: 0;
+                            //         top: 0;
+                            //         z-index: 2;
+                            //         width: 100%;
+                            //         background: red url(../images/image3.jpg) left no-repeat;
+                            //         background-size: cover;
+                            //         height: 100%;
+                            //         max-width: 500px;
+                            //     }
+
+                            // }
+                        }
+                    }
+                }
+                .carousel-caption {
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    padding-bottom: 0;
+                    background-color: rgb(246, 245, 232);
+
+                    .hero-carousel-wrapper {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        // position: relative;
+                        align-items: stretch;
+                        justify-content: center;
+
+                    }
+                }
+            }
+        }
+    }
+}
+.hero-image {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+.hero-image-third {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 50vw;
+    height: 100%;
+
+}
+// ======================== HOME HERO SECTION END =====================
+.contom-arrow-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    p {
+        margin: 0;
+    }
+    .arrow-next-btn {
+        transform: rotate(-180deg);
+    }
+    .arrow-next-btn,
+    .arrow-pre-btn {
+        font-size: 20px;
+        font-weight: 400;
+        color: $black-333;
+    }
+
+}
+// 
+.left-contnt-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 3%;
+    position: relative;
+    z-index: 2;
+    .temp-hed {
+        margin-right: 19%;
+        margin-bottom: 35%;
+    }
+    .hero-content-box {
+
+        max-width: 450px;
+        width: 100%;
+        // position: relative;
+        // z-index: 2;
+        h5,
+        p {
+            margin-bottom: 15px;
+            text-align: start;
+        }
+    }
+}
+// 
+// 
+// ======================= secon section start=======================
+.athonaaum-section-start {
+    padding: 70px 0;
+    position: relative;
+    height: 40vw;
+
+    .right-content-box {
+        justify-content: end !important;
+    }
+
+    .vido-implement {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 55vw;
+        max-width: 2600px;
+        object-fit: cover;
+
+    }
+    .image-efficacious {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 55vw;
+        max-width: 2600px;
+        object-fit: cover;
+    }
+
+    .hero-content-box {
+        width: 36vw;
+    }
+}
+// ======================= secon section end=======================
+// 
+// 
+// 
+// ======================= PEFGUME CSS START ====================
+.container-perfume{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap:30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    &::-webkit-scrollbar{
+    height: 3px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: rgb(221, 219, 219); 
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #888; 
+        border-radius: 5px; 
+      }
+}
+.perfum-card{
+    width:100%;
+    max-width: 370px;
+    min-width:330px;
+    padding-bottom: 20px;
+    .image-frame{
+        width: 100%;
+        height: 330px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+}
+.min-300{
+    min-width:400px;
+}
+// ======================= PEFGUME CSS END ====================
+// 
+// 
+.right-side-slider{
+    height: 30vw;
+    .carousel {
+        height: 100%;
+        .carousel-indicators{
+            width: 100%;
+            background-color: rgb(200, 198, 198);
+            height: 1px;
+            margin: 0;
+            bottom: -34px;
+            button{
+                width:10%;
+                background-color: rgb(200, 198, 198);
+                height: 1px;
+                border-top: none;
+            }
+            .active{
+                background-color: black;
+               
+            }
+        }
+        .carousel-control-next,.carousel-control-prev{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: black;
+            
+        }
+        .carousel-control-prev{
+            background-color: black;
+
+        }
+        .carousel-inner{
+            height: 100%;
+            .carousel-item{
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                width: 100%;
+                .carousel-caption{
+                    left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+// 
+// 
+// 
+.parfum-section-main{
+    padding: 30px 0;
+}
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+@media (max-width:820px) {
+    // ======================== HOME HERO SECTION START =====================
+    .hero-section-carousel {
+        position: relative;
+        .carousel {
+            .carousel-indicators {
+                display: none;
+            }
+            .carousel-control-prev {
+                }
+            .carousel-control-next {
+                }
+            .carousel-inner {
+                max-height: 800px;
+                // padding-bottom: 40px;
+                height: 117vh;
+                .carousel-item {
+                    height: 100%;
+                    &:first-child {
+                        .carousel-caption {
+                            height: 100%;
+                            background-color: #6b4e4e;
+                            .hero-carousel-wrapper {
+                                display: block;
+                                .left-contnt-wrapper {
+                                    }
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        .carousel-caption {
+                            height: 100%;
+                            background-color: #252525;
+                            .hero-carousel-wrapper {
+                                display: block;
+                                .left-contnt-wrapper {
+                                    }
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        .carousel-caption {
+                            height: 100%;
+                            // background: url( '../images/image3.jpg') right no-repeat;
+                            // background-size: cover;
+                            .hero-carousel-wrapper {
+                                display: block;
+                                .left-contnt-wrapper {
+                                    // display: none;
+                                    padding: 0;
+                                    // position: absolute;
+                                    // top:400px ;
+                                }
+                            }
+                        }
+                    }
+                    .carousel-caption {
+                        height: 100%;
+                        .hero-carousel-wrapper {
+                            .left-contnt-wrapper {
+                                top: 458px;
+                                left: 0;
+                                //   padding: 0 5%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hero-image-third {
+        width: 100vw;
+        max-height: 375px;
+        object-position: right;
+    }
+    .hero-image {
+        object-position: right;
+        max-height: 375px;
+        height: 100%;
+    }
+    .contom-arrow-section {
+        justify-content: start;
+        padding-left: 5%;
+        position: absolute;
+        z-index: 2;
+        top: 400px;
+        left: 0;
+        color: white;
+        .arrow-next-btn,
+        .arrow-pre-btn {
+            color: white;
+        }
+    }
+    .temp-hed {
+        display: none;
+    }
+    // ======================== HOME HERO SECTION END =====================
+// ======================= PEFGUME CSS START ====================
+.container-perfume{
+    justify-content: start;
+    min-width:280px;
+}
+.min-300{
+    min-width:100vw;
+}
+// ======================= PEFGUME CSS end ====================
+.right-side-slider{
+    height: 61vw;} 
+ 
+}
+@media (max-width:1181px) {
+    .mw-450{
+        max-width: 800px;
+        width: 100%;
+    }
+    // ======================= secon section start=======================
+    .athonaaum-section-start {
+        padding: 40px 0;
+        height: calc(590px + 35vw);
+        .container {
+            align-items: start !important;
+            .vido-implement,.image-efficacious {
+                position: absolute;
+                right: 0;
+                top: calc(465px + 15vw) ;
+                width: 90vw;
+
+            }
+            .hero-content-box {
+                width: 100vw;
+            }
+        }
+
+    }
+    // ======================= secon section end=======================
+    // 
+}

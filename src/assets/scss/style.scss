@@ -2,37 +2,88 @@
 * {
     font-family: "Suisse Intl Regular, sans-serif";
 }
-// ================= FONT SIZE FUNCTION -------------------
-//1440 screen
-@function fs($a) {
-     @return calc(($a * 1)/14.4) + vw;
-}
-@function dm($a) {
-     @return calc(($a * 1)/14.4) + vw;
-}
-@function lh($a) {
-     @return calc(($a * 1)/14.4) + vw;
+body {
+    background-color: $gray-246;
+    // background-color: rgb(88, 87, 87);
 }
 
-// ================= FONT SIZE FUNCTION -------------------
-// 
+.black-333 {
+    color: $black-333;
+}
+.bg-333{
+    background-color: $black-333 !important;
+}
+.white{
+    color: white;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 70px;
+}
+.mb-flex,
+.mb-show {
+    display: none;
+}
+.w-51{
+    width: 50%;
+}
+.mw-450{
+    max-width: 450px;
+    width: 100%;
+}
+.primary-btn{
+    padding: 19px 23px;
+    border: 1.8px solid rgba(51,51,51,.2);
+     box-shadow: 0 0 5px rgba(51,51,51,.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}
+.boder-white{
+    border: 1.1px solid white;
+    box-shadow: 0 0 3px white;
+}
 // ======================= FONT SIZE START =================================
 .fs-30-25 {
-    font-size: fs(30);
-    line-height: lh(42);
+    font-size: 30px;
+    line-height: 42px;
 }
 .fs-15-13 {
-    font-size: fs(15);
-    line-height: lh(22);
+    font-size: 15px;
+    line-height: 22px;
 }
 .fs-14-12,
+.fs-14-18,
 .fx-14 {
-    font-size: fs(14);
-    line-height: lh(19);
+    font-size: 14px;
+    line-height: 19px;
 }
 
 // ======================= FONT SIZE END =================================
-@media (max-width:920px) {
+@media (max-width:820px) {
+    .container {
+        padding: 0 5%;
+    }
+    .desk-show {
+        display: none !important;
+    }
+    .w-51{
+        width: 100%;
+    }
+    .mb-show {
+        display: block;
+    }
+    .mb-flex {
+        display: flex;
+    }
     // ======================= FONT SIZE START =================================
     .fs-30-25 {
         font-size: 25px;
@@ -46,5 +97,14 @@
         font-size: 12px;
         line-height: 17px;
     }
+    .fs-14-18 {
+        font-size: 18px;
+        line-height: 23px;
+    }
     // ======================= FONT SIZE END =================================
+}
+@media (max-width:1140px) and (min-width:820px) {
+    .tab-hide{
+        display: none;
+    }
 }
